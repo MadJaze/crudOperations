@@ -16,6 +16,8 @@ const [firstName, setFirstName] = useState('');
 const [lastName, setLastName] = useState('');
 const [ID, setID] = useState(null);
 
+console.log(firstName, lastName, ID)
+
 console.log(history)
 
 const sendDataToApi = () => {

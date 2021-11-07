@@ -72,7 +72,9 @@ const onDelete = (id) => {
         <Table.Cell>{data.firstName}</Table.Cell>
         <Table.Cell>{data.lastName}</Table.Cell>
        <Table.Cell>
-           <Link to={`/update/${data.id}`}> <Button color="green" onClick={() => setData(data.id, data.firstName, data.lastName)}>Update</Button> </Link>
+           <Link to={`/update/${data.id}`}> 
+           <Button color="green" onClick={() => setData(data.id, data.firstName, data.lastName)}>
+               Update</Button> </Link>
            </Table.Cell>
            <Table.Cell>
           <Button color="red"  onClick={() => onDelete(data.id)}>Delete</Button>
@@ -82,7 +84,7 @@ const onDelete = (id) => {
         })}
      
     
-     
+      
     </Table.Body>
     <Link to ="/"><Button color="blue" >Add Contact</Button></Link>
   </Table>

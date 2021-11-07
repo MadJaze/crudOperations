@@ -13,8 +13,7 @@ const [lastName, setLastName] = useState('');
 console.log(firstName);
 console.log(lastName);
 
-const sendDataToApi = (e) => {
-  e.preventDefault()
+const sendDataToApi = () => {
     axios.post(`https://617c6683d842cf001711c372.mockapi.io/Crud`, 
     {firstName, 
     lastName

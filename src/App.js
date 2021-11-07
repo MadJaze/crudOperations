@@ -3,7 +3,7 @@ import Create from './components/create/create';
 import Read from './components/read/read';
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Update from './components/update/update';
-import Delete from './components/delete/delete';
+
 
 function App() {
   return (
@@ -26,7 +26,7 @@ function App() {
 
 
         <Route path="/update/:id" component={Update} />
-        <Route path="/delete" component={Delete} />
+       
 
 
       </div>
